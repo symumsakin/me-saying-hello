@@ -1,0 +1,40 @@
+#symumpic{
+    height: 900px;
+    position: relative;
+    left: 20px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.973);
+}
+p{
+    color: rgba(255, 255, 255, 0.795);
+    float: right;
+    font-family: rockwell;
+    font-size: 60px;
+    position: relative;
+    right: 350px;
+}
+p {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+  }
+  
+p {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 726px;}
+  }
+  
+
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
